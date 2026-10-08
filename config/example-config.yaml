@@ -1,0 +1,12 @@
+# Example structure only. Real values are kept private.
+site:
+  name: "Example Directory"
+states: "all"              # list of states, or "all"
+settings:                  # priority order when a facility has several
+  - inpatient
+  - residential
+  - outpatient
+publish_rule:
+  with_phone: publish
+  without_phone: pending
+description_max_chars: 300
